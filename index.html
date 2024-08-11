@@ -1,45 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
 </head>
+
 <body>
     <div id="main">
         <div id="home">
             <div id="nav">
-                <h1>devanshu</h1>
-                <h1>menu+</h1>
-             </div><!--nav -->
+                <h1 class="line magnet-target">devanshu</h1>
+                <h1 class="line magnet-target">menu+</h1>
+            </div><!--nav -->
 
             <div id="text">
-                <h1>PRODUCT</h1>
+                <div class="bon">
+                    <h2 class="magnet-target">PRODUCT</h2>
+                </div>
                 <div id="text2">
-                    <h1>DESIGNER</h1>
-                     <h3>BASED IN TORONTO</h3>
+                    <div class="bonn">
+                        <h1 class="magnet-target">DESIGNER</h1>
+                        <h3 class="magnet-target">BASED IN TORONTO</h3>
+                    </div>
+
                 </div>
             </div><!--center text-->
-            
-            <div id="right">
-                <h1>AVAILABLE FOR FREELANCE</h1>
-                <h1>WORK FROM MAY 23'</h1>
-            </div><!--right text-->
-                
-            <div id="footer">
-                <h1>CURRENTLY WORKING AT YML<i class="ri-arrow-right-up-line"></i></h1>
-                <h1>PROTOPIE AMBASSADOR<i class="ri-arrow-right-up-line"></i></h1>
-                <div id="circle">
-                    <i class="ri-arrow-down-line"></i>
-                    <i class="ri-arrow-down-line"></i>
-            </div><!--footer text-->
-                
+
+            <div id="bottomtext">
+                <div  class="bon" id="left">
+                    <h1 class="line magnet-target">CURRENTLY WORKING AT YML<i class="ri-arrow-right-up-line"></i></h1>
+                    <h1 class="line magnet-target">PROTOPIE AMBASSADOR<i class="ri-arrow-right-up-line"></i></h1>
+                </div>
+
+                <div class="bon" id="right">
+                    <div id="tx">
+                        <h1 class="line magnet-target">AVAILABLE FOR FREELANCE</h1>
+                        <h1 class="line magnet-target">WORK FROM MAY 23'</h1>
+                    </div>
+                    <div id="circle">
+                        <i class="ri-arrow-down-line"></i>
+                        <i class="ri-arrow-down-line"></i>
+                    </div>
+                </div>
+
+            </div><!--bottomtext-->
+
+        </div><!--home-->
+
+        <div id="hero">
+            <div id="pre">
+                <div  class="section ">
+                    <img src="the-plug-ckay.webp" alt="">
+                    <h1>THR PLUG</h1>
+                    <h3>2022</h3>
+                </div>
+                <div class="section">
+                    <img src="titanium.webp" alt="">
+                    <h1>IXPERIENCE</h1>
+                    <h3>2022</h3>
+                </div>
+                <div class="section last" >
+                    <img src="hudu.png" alt="">
+                    <h1>HUDU</h1>
+                    <h3>2022</h3>
+                </div>
             </div>
 
-        </div>
-    </div>
-    
+        </div><!--hero-->
+
+
+
+        <div id="footer">
+            <div id="about">
+                <div class="magnet-target" id="image">
+                    <!-- <img src="WhatsApp Image 2024-08-11 at 23.44.17_07c1ce62.jpg" alt=""> -->
+                </div>
+                <div id="me">
+                    <h4>(ABOUT ME)</h4>
+                    <P>I'm a product designer with a passion for creating products that not only look good but also
+                        solve real problems. When I'm not sketching ideas on paper, you can find me binge-watching a
+                        Netflix series or playing video games. My design philosophy is simple: make it visually
+                        appealing, functional, and bring a smile to people's faces. I'm the designer you want on your
+                        team if you want to make people say 'I need that in my life!'.</P>
+                     <a href="#">Let's talk</a>
+                </div>
+            </div>
+
+            <div id="mention">
+                <div id="textt">
+                    <h4>(FORGOT TO MENTION)</h4>
+                    <h1 class="line">Follow my Instagram page <i class="ri-arrow-right-up-line"></i></h1>
+                </div>
+
+            </div>
+
+            <div id="social">
+                <div id="left">
+                    <h1 >2024<i class="ri-copyright-line"></i></h1>
+                    <h1 >4:00 AM IND</h1>
+                 </div>
+
+                <div id="right">
+                      <a class="line magnet-target" href="#">DRIBBBLE</a>
+                      <a class="line magnet-target" href="#">INSTAGRAM</a>
+                      <a class="line magnet-target" href="#">LINKEDIN</a>
+                      <a class="line magnet-target" href="#">TWITTER</a> 
+                </div>
+
+            </div>
+
+        </div><!--footer-->
+
+
+    </div><!--main-->
+
+
+
+
+
+
+
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <!-- lenis cdn -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script> 
+  
+    <!-- Shery.js cdn -->
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+    <!-- script.js file -->
+    <script src="script.js"></script>
+
+
+
 </body>
+
 </html>
